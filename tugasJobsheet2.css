@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.65;
+    background-color: pink ;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    background: linear-gradient(to bottom right, rgb(229, 113, 132), rgb(229, 129, 146), pink );
+    padding: 20px;
+    box-shadow: 0px 0px 10px 5px whitesmoke;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "sidebar-satu container-satu sidebar-dua gambar-sidebar";
+    grid-template-columns: 1fr 2fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1.3fr;
+}
+
+.sidebar-satu {
+    padding-top: 10px;
+    grid-area: sidebar-satu;
+    justify-self: start;
+}
