@@ -68,5 +68,4 @@ $persentaseKursiKosong = ($jumlahKursiKosong / $jumlahKursiTotal) * 100;
 echo "Jumlah kursi yang masih kosong di restoran: " . $jumlahKursiKosong . "<br>";
 echo "Persentase kursi yang masih kosong di restoran: " . number_format($persentaseKursiKosong, 2) . "%";
 
-
 ?>
