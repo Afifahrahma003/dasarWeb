@@ -71,7 +71,6 @@ if ($hargaProduk > 100000) {
 $totalHarga = $hargaProduk - ($hargaProduk * $diskon);
 echo "Harga yang harus dibayar setelah diskon adalah: Rp " . number_format($totalHarga, 0, ',', '.');
 
-
 echo "<br>";
 echo "<br>";
 
