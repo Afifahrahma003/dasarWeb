@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#upload-form').submit(function(event){
-        event.preventDefault();
+        event.preventDefault(); // Mencegah submit form secara tradisional
         var formData = new FormData(this);
 
         $.ajax({
