@@ -1,6 +1,8 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "prakwebdb");
+// koneksi ke database
+$koneksi = mysqli_connect("localhost","root","","prakwebdb");
 
-if (mysqli_connect_error()) {
-    die("Koneksi database gagal: " . mysqli_connect_error());
+// Periksa koneksi
+if(mysqli_connect_errno()){
+    die("Koneksi database gaga: ". mysqli_connect_error());
 }
