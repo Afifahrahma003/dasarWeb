@@ -10,16 +10,16 @@
         } else {
             echo "Koneksi dengan MySQL Gagal. <br>" . mysqli_connect_error();
         }
-        $sql = "CREATE TABLE user(
-            id INT PRIMARY KEY,
-            username VARCHAR(50) NOT NULL,
-            password VARCHAR(50) NOT NULL)";
-        if (mysqli_query($connect, $sql)) {
-            echo "Table Berhasil Ditambahkan";
-        } else {
-            throw new Exception("Record Gagal Ditambahkan: " . mysqli_error($connect));
-        }
-        mysqli_close( $connect );
+        // $sql = "CREATE TABLE user(
+        //     id INT PRIMARY KEY,
+        //     username VARCHAR(50) NOT NULL,
+        //     password VARCHAR(50) NOT NULL)";
+        // if (mysqli_query($connect, $sql)) {
+        //     echo "Table Berhasil Ditambahkan";
+        // } else {
+        //     throw new Exception("Record Gagal Ditambahkan: " . mysqli_error($connect));
+        // }
+        // mysqli_close( $connect );
     }
     catch (Exception $e) {
         echo $e->getMessage();
