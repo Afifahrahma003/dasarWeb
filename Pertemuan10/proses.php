@@ -22,7 +22,7 @@
                       nama='$nama', jenis_kelamin='$jenis_kelamin', alamat='$alamat', no_telp='$no_telp'
                       WHERE id =$id";
             if (mysqli_query($koneksi, $query)) {
-                header("Location: indeks.php");
+                header("Location: index.php");
             } else {
                 echo "Gagal mengupdate data: ". mysqli_error($koneksi);
             }
@@ -34,7 +34,7 @@
             $id = $_GET['id'];
             $query = "DELETE FROM anggota where id=$id";
             if (mysqli_query($koneksi, $query)) {
-                header("Location: indeks.php");
+                header("Location: indek.php");
                 exit();
             } else {
                 echo "Gagal menghapus data: ". mysqli_error($koneksi);
